@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myblog</title>
+    <style>
+       tr td{
+            text-align: center;
+       }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>myblog</h1>
+    <table width="600">
+        <tr>
+            <th>标题</th>
+            <th>作者</th>
+            <th>访问次数</th>
+        </tr>
+
+        {% for title in titles %}
+            <tr>
+            <td><a href={% url 'blog:homecontent' title.btitle %}>{{ title.btitle }}</a></td>
+            <td>{{ title.bname }}</td>
+            <td>{{ title.bcount }}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myblog</title>
+</head>
+<body>
+    {% for content in contents %}
+        <h1>{{ content.ctitle.btitle }}</h1>
+        <p>作者：{{ content.cname }}</p>
+        <b>内容：</b><br/>
+        <p>{{ content.cinfo }}</p>
+    {% endfor %}
+
+    <div>
+
+    </div>
+</body>
+</html>

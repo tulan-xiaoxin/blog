@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<table border="1px">
+    <tr>
+        <th>标题</th>
+        <th>作者</th>
+        <th>次数</th>
+    </tr>
+
+
+    {% for eassy in eassy %}
+    <tr>
+        <td><a href="{% url 'blog:detail' eassy.etitle %}">{{ eassy.etitle }}</a></td>
+        <td>{{ eassy.eauthor.aname }}</td>
+        <td>{{ eassy.ecount}}</td>
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+
+
+
+
+
+</body>
+</html>

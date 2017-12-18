@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td>标题</td>
+            <td>作者</td>
+            <td>内容</td>
+        </tr>
+
+            <tr>
+            <td>{{ eassy.etitle }}</td>
+            <td>{{ eassy.eauthor.aname }}</td>
+            <td>{{ eassy.etext }}</td>
+            </tr>
+
+
+{#        {% for e in eassy %}#}
+{#            <tr>#}
+{#                <td>{{ e.etitle }}</td>#}
+{#                <td>{{ e.eauthor.aname }}</td>#}
+{#                <td>{{ e.etext }}</td>#}
+{#            </tr>#}
+{##}
+{#        {% endfor %}#}
+
+    </table>
+
+</body>
+</html>
