@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^homecontent/(.*)',views.homeContent,name='homecontent'),
     url(r'^index/',views.index,name='index'),
     url(r'^detail/(.*)',views.detail,name='detail'),
-
+    url(r'^add/',views.add,name='add'),
 ]
